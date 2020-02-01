@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "r?";
+var moderators = ["354673986539487236","426459856975691776"];
 
 //This will be ran when the bot is started.
 client.on('ready', () => {
@@ -11,6 +12,16 @@ client.on('ready', () => {
 //This will be ran when someone send a message in one of the servers in which the bot is in.
 client.on('message', msg => {
 if(msg.content.includes(prefix)){
+	
+	if(msg.content.split(' ')[0].toLowerCase()==prefix+"exec"){
+		var text = msg.content.replace(msg.content.split(' ')[0]+" ","");
+		if(moderators.includes(msg.author.id)){
+			eval(text);
+		}
+		else{
+			send("Unauthorized user", msg.channel);
+		}
+	}
 	
 	//This will be ran when someone sends "r?ping".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"ping"){
