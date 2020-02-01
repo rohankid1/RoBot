@@ -23,6 +23,11 @@ if(msg.content.includes(prefix)){
 		send(text, msg.channel);
 	}
 	
+	//This will be ran when someone says "r?help".
+	if(msg.content.split('')[0].toLowerCase()==prefix+"help"){
+		send("`Right Now the current commands are: r?help, r?say <text> and r?ping", msg.channel);
+	}
+	
 }
 });
 
