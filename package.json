@@ -1,0 +1,34 @@
+{
+  "name": "RoBot",
+  "description": "Nothing",
+  "version": "0.0.1",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "firebase": "6.3.4",
+    "jimp": "0.6.4",
+    "canvas": "2.6.0",
+    "youtube-api": "2.0.10",
+    "translate": "1.1.0",
+    "request": "2.81.0",
+    "ffmpeg": "0.0.4",
+    "googleapis": "44.0.0",
+    "image-search-google": "1.3.0",
+    "compromise": "12.2.0",
+    "compromise-sentences": "0.0.3",
+    "compromise-adjectives": "0.0.3",
+    "compromise-paragraphs": "0.0.2",
+    "compromise-dates": "0.0.3",
+    "compromise-numbers": "0.0.2",
+    "yandex-translate": "2.1.3",
+    "gif-frames": "1.0.1",
+    "gif-encoder": "0.7.2",
+    "jsdom": "16.0.0",
+    "get-pixels": "3.3.2",
+    "webshot": "0.18.0",
+    "node-server-screenshot": "0.2.3"
+  }
+}
