@@ -11,8 +11,9 @@ client.on('ready', () => {
 
 //This will be ran when someone send a message in one of the servers in which the bot is in.
 client.on('message', msg => {
-if(msg.content.includes(prefix)){
-	
+if(msg.content.includes(prefix)&&!msg.author.bot){
+try{
+
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"exec"){
 		var text = msg.content.replace(msg.content.split(' ')[0]+" ","");
 		if(moderators.includes(msg.author.id)){
@@ -39,6 +40,10 @@ if(msg.content.includes(prefix)){
 		send("Right Now the current commands are: r?help, r?say <text> and r?ping", msg.channel);
 	}
 	
+}
+catch(err){
+send("An error happened:\n"+err.message,msg.channel);
+}
 }
 });
 
