@@ -37,7 +37,7 @@ try{
 	
 	//This will be ran when someone says "r?help".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"help"){
-		send("Right Now the current commands are:`\nr?help\nr?say <text>\nr?ping`.\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
+		send("Available Commands:`\n>r?help\nr?say <text>\nr?ping`.\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
 	}
 	
 }
