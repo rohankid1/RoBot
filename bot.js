@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "r?";
-var moderators = ["354673986539487236","426459856975691776","471450218341072936"];
+var moderators = ["354673986539487236","426459856975691776"];
 
 //This will be ran when the bot is started.
 client.on('ready', () => {
