@@ -37,7 +37,7 @@ try{
 	
 	//This will be ran when someone says "r?help".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"help"){
-		send("Available Commands:\n> `r?help`\n > `r?say <text>`\n > `r?ping`\n > `r?boomer`\n > `r?zoomer` \n > `r?date` .\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
+		send("Available Commands:\n> `r?help`\n > `r?say <text>`\n > `r?ping`\n > `r?boomer`\n > `r?zoomer` \n > `r?date` \n > `r?sanic?` .\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
 	}
 	
 	//This will be ran when someone says "r?boomer".
@@ -59,6 +59,11 @@ try{
 	   var day = d.getDate();
 		send("The time is: " + seconds + " seconds, " + minutes + " minutes and " + hours + " hours; " + d, msg.channel);
 	   }
+	
+	//This will be ran when some says "r?sanic?"
+	if(msg.content.split(' ')[0].toLowerCase()==prefix+"sanic?"){
+	send("GOTTA GO FAST!", msg.channel);
+	}
 	
 }
 catch(err){
