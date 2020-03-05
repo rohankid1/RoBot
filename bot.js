@@ -57,7 +57,7 @@ try{
 	   var seconds = d.getSeconds();
 	   var hours = d.getHours();
 	   var day = d.getDate();
-		send("The time is: " + seconds + " seconds, " + minutes + " minutes and " + hours + "hours; " + day, msg.channel);
+		send("The time is: " + seconds + " seconds, " + minutes + " minutes and " + hours + " hours; " + d, msg.channel);
 	   }
 	
 }
