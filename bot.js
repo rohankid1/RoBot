@@ -37,7 +37,7 @@ try{
 	
 	//This will be ran when someone says "r?help".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"help"){
-		send("Available Commands:\n> `r?help`\n > `r?say <text>`\n > `r?ping`\n > `r?boomer`\n > `r?zoomer` .\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
+		send("Available Commands:\n> `r?help`\n > `r?say <text>`\n > `r?ping`\n > `r?boomer`\n > `r?zoomer` \n > `r?date` .\nSpecial Special Thanks to MC41Games who made this bot. Subscribe to MC41Games on YT!", msg.channel);
 	}
 	
 	//This will be ran when someone says "r?boomer".
@@ -49,6 +49,16 @@ try{
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"zoomer"){
 	send("Ok Boomer", msg.channel);
 	}
+	
+	//This will be ran when someone says "r?date".
+	if(msg.content.split(' ')[0].toLowerCase()==prefix+"date"{
+	   var d = new Date();
+	   var minutes = d.getMinutes();
+	   var seconds = d.getSeconds();
+	   var hours = d.getHours();
+	   var day = d.getDay();
+		send("The time is: " + seconds + minutes + hours + "; " + day, msg.channel);
+	   }
 	
 }
 catch(err){
