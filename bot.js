@@ -47,7 +47,7 @@ try{
 	
 	//This will be ran when someone says "r?zoomer".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"zoomer"){
-	send("Ok Boomer", msg.channel)
+	send("Ok Boomer", msg.channel);
 	}
 	
 }
