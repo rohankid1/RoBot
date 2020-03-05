@@ -23,9 +23,7 @@ try{
 			send("Unauthorized user", msg.channel);
 		}
 	}
-	
-		// Below are the commands that DO require the prefix to work.
-	
+	 
 	//This will be ran when someone sends "r?ping".
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"ping"){
 		send("pong", msg.channel);
@@ -65,12 +63,6 @@ try{
 	//This will be ran when some says "r?sanic?"
 	if(msg.content.split(' ')[0].toLowerCase()==prefix+"sanic?"){
 	send("GOTTA GO FAST!", msg.channel);
-	}
-	
-	 // Below are the commands that do not require the prefix "r?..."
-	
-	if(msg.content.split(' ')[0].toLowerCase()=="oof"){
-		send("Yes, oof!", msg.channel);
 	}
 	
 	
