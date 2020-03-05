@@ -51,7 +51,7 @@ try{
 	}
 	
 	//This will be ran when someone says "r?date".
-	if(msg.content.split(' ')[0].toLowerCase()==prefix+"date"{
+	if(msg.content.split(' ')[0].toLowerCase()==prefix+"date"){
 	   var d = new Date();
 	   var minutes = d.getMinutes();
 	   var seconds = d.getSeconds();
