@@ -75,7 +75,7 @@ send("An error happened:\n"+err.message,msg.channel);
 
 function send(mes,ch){
 	setTimeout(function(){ 
-		ch.send(mes.replace(/@everyone/g,"**@every1**").replace(/@here/g,"**@h3r3**"));
+		ch.send(mes.replace(/@everyone/g,"https://www.youtube.com/watch?v=9zG_Rqtl8R0").replace(/@here/g,"https://www.youtube.com/watch?v=oHg5SJYRHA0"));
 	}, 50);
 }
 
